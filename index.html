@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Trivia Reload</title>
+    <link rel="stylesheet" href="main.css">   <!-- Para ligar html y css -->
+  </head>
+  <body>
+    <div id="background"></div>
+    <!-- Encabezado -->
+    <div class="encabezado">
+      <h1 class="encabezado1">Preguntados con Países</h1>
+    </div>
+    <div>
+      <h2 id="saludo"> Bienvenid@</h2>
+    </div>
+  <!-- Solicitud del nombre de usuario-->
+    <div>
+      <form>
+        <h2 id="solicitarNombre">
+          Escribe tu nombre: <input name="nombre" id="myName" type="text">
+          <input name="enviar" type="submit" value="Enviar" onclick="enviarName()">
+        </h2>
+      </form>
+    </div>
+  <!-- Preguntar al usuario si quiere jugar-->
+    <div id="juegas">
+      <p>¿Quieres jugar?</p>
+        <input type="button" value=" Si "onclick="siJuegas()">
+        <input type="submit" value=" No " onclick="noJuegas()">
+    </div>
+
+    <!-- Lanzar serie de preguntas-->
+    <div class="Preguntas">
+      <form id="pregunta-uno">
+        <p>¿En qué país se encuentra la torre Eiffel?</p>
+          <input name="grupo1" id="respuesta1p1" type="radio">
+          1.Italia
+          <br>
+          <input name="grupo1" id="respuesta2p1" type="radio">
+          2.Francia
+          <br>
+          <input name="grupo1" id="respuesta3p1" type="radio">
+          3.Austria
+          <br>
+          <br>
+          <input type="button" value="Enviar" onclick="preguntaUno()">
+      </form>
+
+      <form id="pregunta-dos">
+        <p>¿En dónde se baila samba?</p>
+          <input name="grupo2" id="respuesta1p2" type="radio">
+          1.Cuba
+          <br>
+          <input name="grupo2" id="respuesta2p2" type="radio">
+          2.Brasil
+          <br>
+          <input name="grupo2" id="respuesta3p2" type="radio">
+          3.Perú
+          <br>
+          <br>
+          <input type="button" value="Enviar" onclick="preguntaDos()">
+      </form>
+
+      <form id="pregunta-tres">
+        <p>¿Cuál es el mejor país de América Latina?</p>
+          <input name="grupo3" id="respuesta1p3" type="radio">
+          1.México
+          <br>
+          <input name="grupo3" id="respuesta2p3" type="radio">
+          2.El Salvador
+          <br>
+          <input name="grupo3" id="respuesta3p3" type="radio">
+          3.Trinidad y Tobago
+          <br>
+          <br>
+          <input type="button" value="Enviar" onclick="preguntaTres()">
+      </form>
+    </div>
+
+      <!-- Mostrando los resultados de la trivia -->
+
+    <div id="respuestas">
+      <h2 id="headerCorrectas"> Respuestas Correctas </h2>
+
+        <h3 id="preguntaunoc">Pregunta 1</h3>
+          <h4 id="respuestaunoc"></h4>
+
+        <h3 id="preguntadosc">Pregunta 2</h3>
+          <h4 id="respuestadosc"></h4>
+
+        <h3 id="preguntatresc">Pregunta 3</h3>
+          <h4 id="respuestatresc"></h4>
+
+
+      <h2 id="headerIncorrectas"> Respuestas Incorrectas </h2>
+
+        <h3  id="preguntaunoi">Pregunta 1</h3>
+          <h4 id="respuestaunoi"></h4>
+
+          <h3 id="preguntadosi">Pregunta 2</h3>
+            <h4 id="respuestadosi"></h4>
+
+          <h3 id="preguntatresi">Pregunta 3</h3>
+            <h4 id="respuestatresi"></h4>
+
+    </div>
+
+
+    <script type="text/javascript" src = "app.js"></script>
+
+  </body>
+</html>
